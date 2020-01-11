@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+<div class="hero-wrap" style="background-image: url('/Asset/images/bg_1.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
+            <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="sidebar-wrap bg-light ftco-animate" style="width: 600px; ">
+                    <h3 class="heading mb-4">Thông tin Người thanh toán</h3>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Hà Thụy Ngọc Khánh">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="hakhanh1998@gmail.com">
+                            </div>
+
+                      
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar-wrap bg-light ftco-animate" style="width: 600px; ">
+                    <h3 class="heading mb-4">Hình thức thanh toán</h3>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="form-group">
+
+                                <input type="radio" name="thanhtoan" value="momo" style="height:20px; width:20px; vertical-align: middle;" /> &nbsp; Thanh toán bằng thẻ quốc tế Visa &nbsp;
+                                <img src="~/Asset/images/visa.png" style="height:25px; width:25px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="thanhtoan" value="momo" style="height:20px; width:20px; vertical-align: middle;" />  &nbsp; Thanh toán bằng thẻ quốc tế Master card  &nbsp;
+                                <img src="~/Asset/images/mastercard.jpg" style="height:25px; width:25px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="thanhtoan" value="momo" style="height:20px; width:20px; vertical-align: middle;" /> &nbsp; Thanh toán bằng thẻ JCB &nbsp;
+                                <img src="~/Asset/images/Jmage.png" style="height:25px; width:25px;">
+                            </div>
+                            
+
+
+                        </div>
+                    </form>
+                </div>
+
+
+            </div> <!-- .col-md-8 -->
+            <div class="col-lg-4 sidebar ftco-animate">
+                <div class="sidebar-wrap bg-light ftco-animate" style="width: 400px; ">
+                    <h3 class="heading mb-4">Thông tin hóa đơn</h3>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="form-group">
+                                <label for="#">Họ tên</label>
+                                <input type="text" class="form-control" placeholder="Hà Thụy Ngọc Khánh">
+                            </div>
+                            <div class="form-group">
+                                <label for="#">Ngày Checkin</label>
+                                <input type="text" class="form-control" placeholder="20/01/2020">
+                            </div>
+                            <div class="form-group">
+                                <label for="#">Ngày Checkout</label>
+                                <input type="text" class="form-control" placeholder="27/01/2020">
+                            </div>
+                            <div class="form-group">
+                                <label for="#">Số lượng</label>
+                                <input type="text" class="form-control" placeholder="6">
+                            </div>
+                            <p><span style="font-size:20px; " class="price mr-2"><strong>Tổng tiền: </strong></span> <span class="per" style="font-size:20px; "><strong>$20.00</strong></span></p>
+
+                            <div class="form-group">
+                                <input type="button" value="Thanh Toán" class="btn btn-primary py-3 px-5" onclick="location.href='@Url.Action("Index", "ThongBao")'">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
